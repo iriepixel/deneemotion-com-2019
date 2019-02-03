@@ -1,0 +1,36 @@
+.social-icons {
+  footer &{
+    margin: $global-margin * 3 0;
+    @include breakpoint(small down) {
+      margin: $global-margin 0 0;
+    }
+    a{
+      color: $black;
+      font-size: rem-calc(30);
+      margin: 0 $global-margin;
+      color: $medium-gray;
+      @include animation();
+      &:hover{
+        color: $black;
+      }
+    }
+  }
+  header &{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: rem-calc(20);
+    @include breakpoint(medium down) {
+      display: none;
+    }
+    a{
+      font-size: rem-calc(14);
+      margin: 0 $global-margin / 3;
+      color: $medium-gray;
+      @include animation();
+      &:hover{
+        color: $black;
+      }
+    }
+  }
+}

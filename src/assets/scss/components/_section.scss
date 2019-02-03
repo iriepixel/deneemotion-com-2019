@@ -1,0 +1,58 @@
+section {
+  width: 100%;
+}
+
+  .section--home-grid,
+  .section--instagram,
+  .section--get-in-touch,
+  .section--more-video{
+    padding: $global-padding * 6 0;
+    @include breakpoint(large down) {
+      padding: $global-padding * 4 0;
+    }
+    @include breakpoint(small down) {
+      padding: $global-padding * 2 0;
+    }
+  }
+  .section--video-content{
+    padding: ($global-padding * 3) ($global-padding * 2);
+  }
+  .section--team-text{
+    padding: $global-padding * 3 0 0;
+    font-size: rem-calc(20);
+  }
+  .section--video-grid{
+    padding: ($global-padding * 2) 0 ($global-padding * 6) 0;
+    @include breakpoint(large down) {
+      padding: ($global-padding * 2) 0 
+    }
+  }
+  .section--featured{
+    padding-top: $global-padding * 6;
+    font-size: rem-calc(20);
+    @include breakpoint(large down) {
+      padding-top: $global-padding * 4;
+    }
+    @include breakpoint(small down) {
+      font-size: rem-calc(16);
+    }
+    .page-template-page-contact &{
+      padding-bottom: $global-padding * 3;
+      @include breakpoint(small down) {
+        padding: $global-padding * 2 0;
+      }
+    }
+  }
+  .section--get-in-touch{
+    padding-bottom: $global-padding * 6;
+    font-size: rem-calc(24);
+    @include breakpoint(medium down) {
+      padding-bottom: $global-padding * 4;
+      font-size: rem-calc(20);
+    }
+    @include breakpoint(medium down) {
+      padding-bottom: $global-padding * 2;
+      font-size: rem-calc(18);
+      
+    }
+  }

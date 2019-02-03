@@ -1,0 +1,128 @@
+.site-header{
+  position: fixed;
+  background-color: rgba(255,255,255,0.95);
+  width: 100%;
+  z-index: 9;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-image: url(http://s3-eu-west-2.amazonaws.com/deneemotioncom/wp-content/uploads/2019/02/02195748/deneemotion-logo-black.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .5;
+  }
+}
+.main-navigation{
+  border-bottom: 1px solid $light-gray;
+  height: 70px;
+}
+  .menu-main-menu-container{
+    @include breakpoint(small down) {
+      display: none;
+    }
+  }
+    .menu{
+      display: block;
+      text-align: center;
+      padding: $global-padding 0;
+    }
+      .menu-item{
+        position: relative;
+        display: inline-block;
+        margin: 0 ($global-margin * 2);
+        @include breakpoint(large down) {
+          margin: 0 $global-margin / 2;
+        }
+        a{
+          color: $black;
+          font-family: $header-font-family;
+          font-size: rem-calc(18); 
+        }
+      }
+      .menu-item:nth-child(1),
+      .menu-item:nth-child(4){
+        &:before,
+        &:after{
+          content: '';
+          position: absolute;
+          width: rem-calc(45);
+          height: rem-calc(1);
+          top: 50%;
+          background-color: get-color(brand);
+          @include breakpoint(large down) {
+            width: rem-calc(20);
+          }
+        }
+      }
+      .menu-item:nth-child(1){
+        &:before{
+          left: -55px;
+          @include breakpoint(large down) {
+            left: -20px;
+          }
+        }
+        &:after{
+          right: -55px;
+          @include breakpoint(large down) {
+            right: -20px;
+          }
+        }
+      }
+      .menu-item:nth-child(4){
+        &:before{
+          left: -55px;
+          @include breakpoint(large down) {
+            left: -20px;
+          }
+        }
+        &:after{
+          right: -55px;
+          @include breakpoint(large down) {
+            right: -20px;
+          }
+        }
+      }
+      .menu-item:nth-child(2),
+      .menu-item:nth-child(3){
+        &:after{
+          content: '';
+          position: absolute;
+          width: rem-calc(45);
+          height: rem-calc(1);
+          top: 50%;
+          background-color: get-color(brand);
+          @include breakpoint(large down) {
+            width: rem-calc(20);
+          }
+        }
+      }
+      .menu-item:nth-child(2){
+        margin-right: $global-margin * 6;
+        @include breakpoint(large down) {
+          margin-right: $global-margin * 4;
+        }
+        &:after{
+          right: -55px;
+          @include breakpoint(large down) {
+            right: -20px;
+          }
+        }
+      }
+      .menu-item:nth-child(3){
+        margin-left: $global-margin * 6;
+        @include breakpoint(large down) {
+          margin-left: $global-margin * 4;
+        }
+        &:after{
+          content: '';
+          left: -50px;
+          @include breakpoint(large down) {
+            left: -15px;
+          }
+        }
+      }

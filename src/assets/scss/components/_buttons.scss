@@ -1,0 +1,29 @@
+// .sites-button {
+//   background: $primary-color;
+//   font-size: 1.25rem;
+//   font-weight: bold;
+//   box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+//   border-radius: 3px;
+//   border: none;
+// }
+.button{
+  font-size: rem-calc(18);
+  border-radius: $global-radius;
+}
+  .button--brand{
+    color: $black;
+    background-color: transparent;
+    border-color: get-color(brand);
+    padding: $global-padding $global-padding * 2;
+    &:hover{
+      background-color: get-color(brand);
+    }
+  }
+  .button--brand[disabled]{
+    color: $white;
+    background-color: get-color(brand);
+    border-color: get-color(brand);
+    &:hover{
+      background-color: get-color(brand);
+    }
+  }

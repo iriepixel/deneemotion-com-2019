@@ -1,0 +1,36 @@
+.thumb {
+  text-align: center;
+  &:last-child(){
+    .single-videos &{
+      @include breakpoint(large) {
+        display: none;
+      }
+    }
+  }
+}
+  .thumb__link{
+    color: $black;
+    @include animation();
+    &:hover{
+      color: get-color(brand);
+    }
+  }
+    .thumb__image{
+      overflow: hidden;
+      @include animation();
+      img{
+        @include animation();
+      }
+      &:hover{
+        opacity: .6;
+        img{
+          transform: scale(1.04);
+        }
+      }
+    }
+    .thumb__text{
+      margin: $global-margin 0;
+    }
+      .thumb__title{
+        margin: 0;
+      }

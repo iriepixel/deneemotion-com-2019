@@ -1,0 +1,59 @@
+.post-navigation{
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  z-index: 19;
+  .nav-previous,
+  .nav-next{
+    a{
+      display: block;
+      position: relative;
+      text-indent: -99999px;
+      width: rem-calc(40);
+      height: rem-calc(100);
+      background-color: $white;
+      border: 1px solid;
+      border-color:rgba(184, 144, 104, .3);
+      @include animation();
+      &::after{
+        text-indent: 0;
+        font-family: 'FontAwesome';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: rem-calc(30);
+        color: get-color(brand);
+        @include animation();
+      }
+    }
+  }
+  .nav-previous{
+    a{
+      margin-left: -2px;
+      &::after{
+        content: "\f104";
+      }
+    }
+    a:hover{
+      border-color:rgba(184, 144, 104, 1);
+      &::after{
+        transform: translate(-100%, -50%);
+      } 
+    }
+  }
+  .nav-next{
+    a{
+      margin-right: -2px;
+      &::after{
+        content: "\f105";
+      }
+    }
+    a:hover{
+      border-color:rgba(184, 144, 104, 1);
+      &::after{
+        transform: translate(0%, -50%);
+      } 
+    }
+  }
+}

@@ -1,0 +1,47 @@
+h1,h2{
+  text-transform: uppercase;
+}
+  .section__title{
+    position: relative;
+    margin-bottom: $global-margin * 5;
+    letter-spacing: 2px;
+    > div{
+      font-size: rem-calc(36);
+      margin-bottom: $global-margin;
+      @include breakpoint(small down) {
+        font-size: rem-calc(26);
+      }
+    }
+    .section--featured &{
+      margin-bottom: $global-margin * 3;
+      .page-template-page-about &{
+        margin-bottom: $global-margin * 5;
+        @include breakpoint(medium down) {
+          margin-bottom: $global-margin * 3;
+        }
+      }
+      @include breakpoint(small down) {
+        margin-bottom: $global-margin * 2;
+      }
+    }
+    .section--team &{
+      margin: $global-margin * 5 0;
+    }
+    @include breakpoint(medium down) {
+      margin-bottom: $global-margin * 3;
+    }
+    @include breakpoint(small down) {
+      margin-bottom: $global-margin * 2;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width: rem-calc(45);
+      height: rem-calc(1);
+      bottom: -$global-margin;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%);
+      background-color: get-color(brand);
+    }
+  }

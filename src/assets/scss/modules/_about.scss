@@ -1,0 +1,52 @@
+.about{
+  & .jarallax{
+    height: 800px;
+    @include breakpoint(xlarge down) {
+      height: 600px;
+    }
+    @include breakpoint(large down) {
+      // height: 500px;
+    }
+    @include breakpoint(medium down) {
+      height: 400px;
+    }
+  }
+}
+  .about__right{
+    padding: 0 $global-padding * 2;
+    @include breakpoint(medium down) {
+      padding: $global-padding * 2;
+    }
+    @include breakpoint(small down) {
+      padding: $global-padding * 2 0;
+    }
+  }
+    .about__title{
+      position: relative;
+      margin-bottom: $global-margin * 3;
+      @include breakpoint(medium down) {
+        margin-top: $global-margin * 2;
+        text-align: center;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: rem-calc(1);
+        bottom: -$global-margin;
+        left: 0;
+        background-color: get-color(brand);
+      }
+    }
+  
+    .about__text{
+      font-size: rem-calc(18);
+      @include breakpoint(medium down) {
+        padding: 0 !important;
+      }
+    }
+    .about__button{
+      @include breakpoint(medium down) {
+        text-align: center;
+      }
+    }

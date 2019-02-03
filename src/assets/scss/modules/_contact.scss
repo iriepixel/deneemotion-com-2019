@@ -1,0 +1,66 @@
+.contact{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .nf-before-form-content{
+    display: none;
+  }
+  @include breakpoint(medium down) {
+    width: 80%;
+  }
+  @include breakpoint(small down) {
+    width: 90%;
+  }
+}
+.contact__bg{
+  height: 1000px;
+  @include breakpoint(small down) {
+    height: 800px;
+  }
+}
+  .contact-form{
+    padding: ($global-padding * 4) ($global-padding * 6);
+    background-color: rgba(255,255,255,.8);
+    border: 1px solid;
+    border-color: rgba(184, 144, 104, .6);
+    @include breakpoint(small down) {
+      padding: ($global-padding * 2) ($global-padding * 2);
+    }
+    .textbox-container,
+    .email-container,
+    .date-container,
+    .address-container,
+    .textarea-container{
+      margin-bottom: $global-margin;
+      input,
+      textarea{
+        border-radius: $global-radius;
+        box-shadow: none;
+        border-color:rgba(184, 144, 104, .3);
+        &::placeholder{
+          color: $dark-gray;
+        }
+        &[aria-invalid="true"]{
+          border-color:rgba(255, 0, 0, .3);
+        }
+      }
+      .nf-error-msg{
+        display: none !important;
+      }
+    }
+    .submit-container{
+      text-align: center;
+      input{
+        border-color:rgba(184, 144, 104, 1) !important;
+      }
+    }
+    .nf-error-msg{
+      opacity: .5;
+    }
+    .nf-form-errors,
+    .nf-response-msg{
+      text-align: center !important;
+    }
+  }
