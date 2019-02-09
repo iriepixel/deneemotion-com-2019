@@ -8,7 +8,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-60%, -50%);
     width: 60px;
     height: 60px;
     background-image: url(https://s3-eu-west-2.amazonaws.com/deneemotioncom/wp-content/uploads/2019/02/02195748/deneemotion-logo-black.svg);
@@ -41,7 +41,12 @@
         a{
           color: $black;
           font-family: $header-font-family;
-          font-size: rem-calc(18); 
+          font-size: rem-calc(14); 
+          text-transform: uppercase;
+          @include animation();
+          &:hover{
+            color: get-color(brand);
+          }
         }
       }
       .menu-item:nth-child(1),
@@ -107,7 +112,7 @@
           margin-right: $global-margin * 4;
         }
         &:after{
-          right: -55px;
+          right: -50px;
           @include breakpoint(large down) {
             right: -20px;
           }

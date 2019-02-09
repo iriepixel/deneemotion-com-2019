@@ -30,8 +30,11 @@ section {
   .section--featured{
     padding-top: $global-padding * 6;
     font-size: rem-calc(20);
+    @include breakpoint(xxlarge down) {
+      padding-top: $global-padding * 3;
+    }
     @include breakpoint(large down) {
-      padding-top: $global-padding * 4;
+      padding-top: $global-padding * 2;
     }
     @include breakpoint(small down) {
       font-size: rem-calc(16);
