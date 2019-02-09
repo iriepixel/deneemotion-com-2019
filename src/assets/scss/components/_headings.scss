@@ -24,6 +24,9 @@ h1,h2{
         margin-bottom: $global-margin * 2;
       }
     }
+    .section--get-in-touch &{
+      margin-bottom: $global-margin;
+    }
     .section--team &{
       margin: $global-margin * 5 0;
     }

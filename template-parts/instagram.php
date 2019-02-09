@@ -6,11 +6,11 @@
   </div>
 
   <div class="show-for-large">
-    <?php echo do_shortcode('[instagram-feed layout=grid num=8 cols=4 showheader=false showbutton=false showfollow=false]'); ?>
+    <?php echo do_shortcode('[instagram-feed layout=grid num=8 cols=8 showheader=false showbutton=false showfollow=false]'); ?>
   </div>
 
   <div class="show-for-medium-only">
-    <?php echo do_shortcode('[instagram-feed layout=grid num=8 cols=4 showheader=false showbutton=false showfollow=false]'); ?>
+    <?php echo do_shortcode('[instagram-feed layout=grid num=6 cols=6 showheader=false showbutton=false showfollow=false]'); ?>
   </div>
 
   <div class="show-for-small-only">
