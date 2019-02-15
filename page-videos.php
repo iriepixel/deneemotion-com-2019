@@ -35,6 +35,7 @@ get_header();
           // WP_Query arguments
           $args_posts = [
               'post_type'       => 'videos',
+              'posts_per_page'  => -1
           ];
           // The Query
           $query_posts = new wp_query( $args_posts );
