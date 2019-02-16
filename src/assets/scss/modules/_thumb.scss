@@ -11,7 +11,6 @@
   .thumb__link{
     position: relative;
     display: block;
-    // color: $black;
     color: $white;
     @include animation();
     &:hover{
@@ -24,7 +23,6 @@
       }
       .thumb__title,
       .thumb__location{
-        // opacity: 1;
         color: $black;
       }
     }
@@ -43,7 +41,6 @@
       }
     }
     .thumb__text{
-      margin: $global-margin 0;
       position: absolute;
       top: 50%;
       left: 50%;
