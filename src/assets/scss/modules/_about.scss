@@ -1,14 +1,10 @@
 .about{
   & .jarallax{
-    height: 800px;
     @include breakpoint(xxlarge down) {
-      height: 600px;
+      height: 800px;
     }
     @include breakpoint(xlarge down) {
       height: 500px;
-    }
-    @include breakpoint(large down) {
-      // height: 450px;
     }
     @include breakpoint(medium down) {
       height: 400px;

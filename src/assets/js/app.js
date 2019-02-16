@@ -17,7 +17,7 @@ $(document).foundation();
 jarallaxElement();
 
 jarallax(document.querySelectorAll('.jarallax'), {
-  speed: 0.3
+  speed: 0.5
 });
 
 // jarallax(document.querySelectorAll('.jarallax'), {
