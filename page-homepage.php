@@ -27,6 +27,7 @@ get_header();
           $args_posts = [
               'post_type'       => 'videos',
               'posts_per_page'  => 6,
+              'orderby'         => 'rand'
           ];
           // The Query
           $query_posts = new wp_query( $args_posts );
