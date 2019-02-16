@@ -3,7 +3,6 @@ section {
 }
 
   .section--home-grid,
-  .section--instagram,
   .section--get-in-touch,
   .section--more-video{
     padding: $global-padding * 6 0;
@@ -46,11 +45,12 @@ section {
       }
     }
   }
-  .section--get-in-touch{
-    padding-bottom: $global-padding * 6;
+  .section--get-in-touch,
+  .section--instagram{
+    padding: $global-padding * 4 0;
     font-size: rem-calc(24);
     @include breakpoint(medium down) {
-      padding-bottom: $global-padding * 4;
+      padding-bottom: $global-padding * 3;
       font-size: rem-calc(20);
     }
     @include breakpoint(medium down) {

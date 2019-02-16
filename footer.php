@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<!--<footer id="colophon" class="site-footer">
 
 		<div class="grid-container grid">
   		<div class="grid-x grid-padding-x">
@@ -21,15 +21,15 @@
 					<?php get_template_part( 'template-parts/social-icons' ); ?>
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 		<div class="grid-container grid co">
-			<div class="grid-x grid-padding-x grid-padding-y padding-vertical-2 color--dark-gray">
-				<div class="cell large-6 text-center">
+			<div class="grid-x grid-padding-x grid-padding-y padding-vertical-1 color--dark-gray">
+				<div class="cell large-6 text-left">
 					&copy; <?php echo date("Y"); ?> DENEE MOTION | All right reserved
 				</div>
-				<div class="cell large-6 text-center">
-					Developed in Brighton with <i class="fa fa-heart color--red" aria-hidden="true"></i> by <a class="color--dark-gray underline" href="https://iriepixel.com">IRIE PIXEL</a>
+				<div class="cell large-6 text-right">
+					Developed in Brighton with <i class="fa fa-heart color--red" aria-hidden="true"></i> by <a class="color--dark-gray underline" href="https://iriepixel.com" target="_blank">IRIE PIXEL</a>
 				</div>
 			</div>
 		</div>
