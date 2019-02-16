@@ -28,7 +28,7 @@ get_header();
       <section class="section--video-content bg-color--gray">
         <div class="grid-container">
           <div class="grid-x">
-            <div class="cell ">
+            <div class="cell large-10 large-offset-1">
               <?php the_content(); ?>
             </div>
           </div>

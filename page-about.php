@@ -52,7 +52,7 @@ get_header();
             <div class="cell">
               <h2 class="section__title text-center">Meet our team</h2>
             </div>
-            <div class="cell">
+            <div class="cell large-10 large-offset-1">
               <img src="<?php the_field('team_image'); ?>" alt="Deneemotion team">
             </div>
           </div>

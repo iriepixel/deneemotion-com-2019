@@ -21,13 +21,13 @@
           -webkit-backface-visibility: hidden;
         }
       }
+      .thumb__text{
+        text-shadow: none;
+      }
       .thumb__title,
       .thumb__location{
         color: $black;
       }
-    }
-    &:hover {
-      
     }
   }
     .thumb__image{
@@ -47,6 +47,8 @@
       width: 90%;
       transform: translate(-50%, -50%) translate3d(0,0,0);
       -webkit-backface-visibility: hidden;
+      text-shadow: 0px 0px 8px rgba(0,0,0,.3);
+      @include animation();
     }
       .thumb__title{
         margin: 0;
