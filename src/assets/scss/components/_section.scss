@@ -16,8 +16,8 @@ section {
   .section--video-content{
     padding: ($global-padding * 3) ($global-padding * 2);
     a{
-      color: $brand;
-      text-decoration: underline;
+      color: $brand !important;
+      text-decoration: underline !important;
     }
   }
   .section--team-text{
