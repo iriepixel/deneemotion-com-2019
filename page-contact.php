@@ -49,6 +49,11 @@ get_header();
         <!-- team -->
       </section>
 
+      <section class="section--instagram">
+        <!-- instagram -->
+        <?php get_template_part( 'template-parts/instagram' ); ?>
+      </section>
+
       <section class="section--get-in-touch bg-color--gray">
         <?php get_template_part( 'template-parts/get-in-touch' ); ?>
       </section>
