@@ -3,31 +3,22 @@
   background-color: rgba(255,255,255,0.95);
   width: 100%;
   z-index: 9;
-  &::after{
-    // content: '';
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-60%, -50%);
-    // width: 60px;
-    // height: 60px;
-    // background-image: url(https://s3-eu-west-2.amazonaws.com/deneemotioncom/wp-content/uploads/2019/02/02195748/deneemotion-logo-black.svg);
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // opacity: .5;
-  }
 }
 .site-branding{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
+  width: rem-calc(60);
+  height: rem-calc(60);
   background-size: contain;
   background-repeat: no-repeat;
   opacity: .5;
   z-index: 9;
+  @include breakpoint(small only) {
+    width: rem-calc(50);
+    height: rem-calc(50);
+  }
 }
 .main-navigation{
   border-bottom: 1px solid $light-gray;
