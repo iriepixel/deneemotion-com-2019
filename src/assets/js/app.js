@@ -13,17 +13,20 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-$(document).foundation();
-jarallaxElement();
 
-jarallax(document.querySelectorAll('.jarallax'), {
-  speed: 0.5
-});
 
-document.getElementById('hamburger--js').addEventListener('click', function () {
-  this.classList.toggle("is-active");
-  document.querySelector('.menu-main-menu-container').classList.toggle('active');
-  // document.querySelector('.menu-main-menu-container').classList.toggle('hidden');
 
-  console.log('hamburger clicked')
+document.addEventListener("DOMContentLoaded", function () {
+  // Handler when the DOM is fully loaded
+  $(document).foundation();
+  jarallaxElement();
+
+  jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.5
+  });
+
+  document.getElementById('hamburger--js').addEventListener('click', function () {
+    this.classList.toggle("is-active");
+    document.querySelector('.menu-main-menu-container').classList.toggle('active');
+  });
 });
