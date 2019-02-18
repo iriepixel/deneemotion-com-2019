@@ -23,5 +23,7 @@ jarallax(document.querySelectorAll('.jarallax'), {
 document.getElementById('hamburger--js').addEventListener('click', function () {
   this.classList.toggle("is-active");
   document.querySelector('.menu-main-menu-container').classList.toggle('active');
-  document.querySelector('.menu-main-menu-container').classList.toggle('hidden');
+  // document.querySelector('.menu-main-menu-container').classList.toggle('hidden');
+
+  console.log('hamburger clicked')
 });
