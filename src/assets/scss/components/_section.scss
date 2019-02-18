@@ -3,7 +3,6 @@ section {
 }
 
   .section--home-grid,
-  .section--get-in-touch,
   .section--more-video{
     padding: $global-padding * 6 0;
     @include breakpoint(large down) {
@@ -15,6 +14,9 @@ section {
   }
   .section--video-content{
     padding: ($global-padding * 3) ($global-padding * 2);
+    @include breakpoint(small down) {
+      padding: $global-padding;
+    }
     a{
       color: get-color(brand);
       text-decoration: underline;
@@ -23,6 +25,14 @@ section {
   .section--team-text{
     padding: $global-padding * 3 0 0;
     font-size: rem-calc(20);
+    @include breakpoint(small down) {
+      padding: $global-padding * 2 0 0;
+    }
+    p{
+      @include breakpoint(small down) {
+        font-size: rem-calc(16);
+      }
+    }
   }
   .section--video-grid{
     padding: ($global-padding * 2) 0 ($global-padding * 6) 0;
@@ -33,6 +43,11 @@ section {
   .section--featured{
     padding-top: $global-padding * 6;
     font-size: rem-calc(20);
+    p{
+      @include breakpoint(small down) {
+        margin-bottom: 0;
+      }
+    }
     @include breakpoint(xxlarge down) {
       padding-top: $global-padding * 3;
     }
@@ -57,9 +72,8 @@ section {
       padding-bottom: $global-padding * 3;
       font-size: rem-calc(20);
     }
-    @include breakpoint(medium down) {
-      padding-bottom: $global-padding * 2;
+    @include breakpoint(small down) {
+      padding: $global-padding * 2 0;
       font-size: rem-calc(18);
-      
     }
   }

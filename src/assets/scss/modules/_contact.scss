@@ -16,8 +16,8 @@
 }
 .contact__bg{
   height: 1000px;
-  @include breakpoint(small down) {
-    height: 800px;
+  @include breakpoint(small only) {
+    height: rem-calc(600);
   }
 }
   .contact-form{
@@ -25,7 +25,7 @@
     background-color: rgba(255,255,255,.8);
     border: 1px solid;
     border-color: rgba(184, 144, 104, .6);
-    @include breakpoint(small down) {
+    @include breakpoint(small only) {
       padding: ($global-padding * 2) ($global-padding * 2);
     }
     .textbox-container,
@@ -39,11 +39,19 @@
         border-radius: $global-radius;
         box-shadow: none;
         border-color:rgba(184, 144, 104, .3);
+        @include breakpoint(small only) {
+          font-size: rem-calc(14);
+        }
         &::placeholder{
           color: $dark-gray;
         }
         &[aria-invalid="true"]{
           border-color:rgba(255, 0, 0, .3);
+        }
+      }
+      textarea{
+        @include breakpoint(small only) {
+          height: rem-calc(100);
         }
       }
       .nf-error-msg{

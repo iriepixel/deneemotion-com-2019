@@ -59,7 +59,7 @@ get_header();
         <div class="grid-container grid">
   
           <?php if( $query_posts->have_posts() ) : ?>
-            <div class="grid__block grid-x grid-padding-x">
+            <div class="grid__block grid-x grid-padding-x grid-margin-y">
   
               <?php while ( $query_posts->have_posts() ) : $query_posts->the_post(); ?>
                 <?php get_template_part( 'template-parts/video-thumb' ); ?>

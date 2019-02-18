@@ -1,4 +1,4 @@
-.about{
+.about__section{
   & .jarallax{
     @include breakpoint(xxlarge down) {
       height: 800px;
@@ -9,7 +9,15 @@
     @include breakpoint(medium down) {
       height: 400px;
     }
+    @include breakpoint(medium down) {
+      .page-template-page-about &{
+        height: 300px;
+      }
+    }
   }
+}
+.about__container{
+
 }
   .about__right{
     padding: 0 $global-padding * 2;

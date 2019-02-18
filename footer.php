@@ -13,17 +13,9 @@
 
 	</div><!-- #content -->
 
-	<!--<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer">
 
-		<div class="grid-container grid">
-  		<div class="grid-x grid-padding-x">
-				<div class="cell text-center">
-					<?php get_template_part( 'template-parts/social-icons' ); ?>
-				</div>
-			</div>
-		</div>-->
-
-		<div class="grid-container grid co">
+		<div class="footer__container grid-container grid">
 			<div class="grid-x grid-padding-x grid-padding-y padding-vertical-1 color--dark-gray">
 				<div class="cell large-6 text-left">
 					&copy; <?php echo date("Y"); ?> DENEE MOTION | All right reserved

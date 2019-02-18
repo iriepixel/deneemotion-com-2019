@@ -1,4 +1,4 @@
-<div class="grid-container grid">
+<div class="instagram__container grid-container grid">
   <div class="grid-x grid-padding-x">
     <div class="cell">
       <h2 class="section__title text-center">Instagram</h2>
@@ -18,7 +18,7 @@
   </div>
 
   <div class="grid-x grid-padding-x text-center">
-    <div class="cell padding-top-3">
+    <div class="cell">
       <a class="button button--brand" href="https://www.instagram.com/deneemotion" target="_blank">View more</a>
     </div>
   </div>

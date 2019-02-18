@@ -56,9 +56,9 @@ get_header();
         <!-- video grid -->
       </section>
 
-      <section class="section--about bg-color--gray about">
+      <section class="section--about about__section bg-color--gray">
         <!-- about -->
-        <div class="grid-container grid full">
+        <div class="about__container grid-container grid full">
           <div class="grid-x align-middle">
             <div class="cell large-6">
               <div class="jarallax">
@@ -67,7 +67,7 @@ get_header();
             </div>
             <div class="cell large-6">
               <div class="grid-container grid">
-                <div class="grid-x grid-padding-x about__right">
+                <div class="grid-x grid-padding-x grid-margin-x about__right">
                   <div class="cell">
                     <h2 class="about__title">About us</h2>
                   </div>

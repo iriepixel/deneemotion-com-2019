@@ -3,6 +3,9 @@
   top: 40%;
   width: 100%;
   z-index: 19;
+  @include breakpoint(small down) {
+    display: none;
+  }
   .nav-previous,
   .nav-next{
     a{

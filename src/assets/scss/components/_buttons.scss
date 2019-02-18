@@ -9,14 +9,26 @@
 .button{
   font-size: rem-calc(18);
   border-radius: $global-radius;
+  @include breakpoint(small only) {
+    font-size: rem-calc(16);
+  }
 }
   .button--brand{
     color: $black;
     background-color: transparent;
     border-color: get-color(brand);
     padding: $global-padding $global-padding * 2;
+    @include breakpoint(small only) {
+      padding: $global-padding $global-padding;
+    }
     &:hover{
       background-color: get-color(brand);
+    }
+    .instagram__container &{
+      margin-top: $global-margin * 3;
+      @include breakpoint(small only) {
+        margin-top: $global-margin;
+      }
     }
   }
   .button--brand[disabled]{

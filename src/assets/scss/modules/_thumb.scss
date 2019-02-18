@@ -5,6 +5,9 @@
       @include breakpoint(large) {
         display: none;
       }
+      @include breakpoint(small only) {
+        display: none;
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-<div class="grid-container grid">
+<div class="grid-container grid getintouch__container">
   <div class="grid-x grid-padding-x grid-margin-x grid-padding-y">
     <div class="cell text-center">
       <h2 class="section__title">Get in touch</h2>

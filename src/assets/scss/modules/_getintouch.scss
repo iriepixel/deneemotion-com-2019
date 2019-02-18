@@ -1,7 +1,4 @@
-.footer__container{
-  @include breakpoint(small only) {
-      font-size: rem-calc(14);
-    }
+.getintouch__container{
   & .text-right{
     @include breakpoint(small only) {
       text-align: center;
