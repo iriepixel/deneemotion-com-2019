@@ -7,7 +7,7 @@
       <i class="fa fa-envelope-o color--brand" aria-hidden="true"></i> <a class="color--dark-gray" href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
     </div>
     <div class="cell large-4 medium-6 color--dark-gray text-left">
-      <i class="fa fa-phone color--brand" aria-hidden="true"></i> <?php the_field('phone_number', 'option'); ?>
+      <i class="fa fa-phone color--brand" aria-hidden="true"></i> <a class="color--dark-gray" href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a>
     </div>
   </div>
 </div>
