@@ -1,10 +1,5 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
-import {
-  jarallax,
-  jarallaxElement,
-  jarallaxVideo
-} from 'jarallax';
 
 window.$ = $;
 
@@ -13,17 +8,28 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 
+// import {
+//   jarallax,
+//   jarallaxElement,
+//   jarallaxVideo
+// } from './jarallax';
 
+// import {
+//   jarallax,
+//   jarallaxElement,
+//   jarallaxVideo
+// } from 'jarallax';
 
+$(document).foundation();
 
 document.addEventListener("DOMContentLoaded", function () {
   // Handler when the DOM is fully loaded
   $(document).foundation();
-  jarallaxElement();
+  // jarallaxElement();
 
-  jarallax(document.querySelectorAll('.jarallax'), {
-    speed: 0.5
-  });
+  // jarallax(document.querySelectorAll('.jarallax'), {
+  //   speed: 0.5
+  // });
 
   document.getElementById('hamburger--js').addEventListener('click', function () {
     this.classList.toggle("is-active");
