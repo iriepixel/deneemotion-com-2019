@@ -41,6 +41,12 @@
 		</nav><!-- #site-navigation -->
 
 		<?php get_template_part( 'template-parts/social-icons' ); ?>
+
+		<div id="hamburger--js" class="hamburger hamburger--squeeze js-hamburger">
+			<div class="hamburger-box">
+				<div class="hamburger-inner"></div>
+			</div>
+		</div>
 		
 	</header><!-- #masthead -->
 

@@ -20,6 +20,8 @@ jarallax(document.querySelectorAll('.jarallax'), {
   speed: 0.5
 });
 
-// jarallax(document.querySelectorAll('.jarallax'), {
-//   speed: 0.2
-// });
+document.getElementById('hamburger--js').addEventListener('click', function () {
+  this.classList.toggle("is-active");
+  document.querySelector('.menu-main-menu-container').classList.toggle('active');
+  document.querySelector('.menu-main-menu-container').classList.toggle('hidden');
+});
