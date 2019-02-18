@@ -18,7 +18,7 @@
 		<div class="footer__container grid-container grid">
 			<div class="grid-x grid-padding-x grid-padding-y padding-vertical-1 color--dark-gray">
 				<div class="cell large-6 text-left">
-					&copy; <?php echo date("Y"); ?> DENEE MOTION | All right reserved
+					&copy; <?php echo date("Y"); ?> DENEE MOTION | All rights reserved
 				</div>
 				<div class="cell large-6 text-right">
 					Developed in Brighton with <i class="fa fa-heart color--red" aria-hidden="true"></i> by <a class="color--dark-gray underline" href="https://iriepixel.com" target="_blank">IRIE PIXEL</a>
