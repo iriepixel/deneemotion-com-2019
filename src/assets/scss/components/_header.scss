@@ -197,19 +197,18 @@ $hamburger-hover-use-filter   : false !default;
 $hamburger-hover-filter       : opacity(50%) !default;
 $hamburger-active-hover-filter: $hamburger-hover-filter !default;
 
-
-.hamburger{
-  
-}
-
 .hamburger {
+  display: none;
+  @include breakpoint(small only) {
+    display: inline-block;
+  }
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: $global-margin;
 
   padding: $hamburger-padding-y $hamburger-padding-x;
-  display: inline-block;
+  
   cursor: pointer;
 
   transition-property: opacity, filter;
