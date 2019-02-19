@@ -31,9 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
   //   speed: 0.5
   // });
 
-  document.getElementById('hamburger--js').addEventListener('click', function () {
-    this.classList.toggle("is-active");
-    document.querySelector('.menu-main-menu-container').classList.toggle('active');
-    alert('menu button clicked');
-  });
+});
+
+document.getElementById('hamburger--js').addEventListener('click', function () {
+  this.classList.toggle("is-active");
+  document.querySelector('.menu-main-menu-container').classList.toggle('active');
+  alert('menu button clicked');
 });
