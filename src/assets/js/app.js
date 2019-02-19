@@ -36,5 +36,4 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById('hamburger--js').addEventListener('click', function () {
   this.classList.toggle("is-active");
   document.querySelector('.menu-main-menu-container').classList.toggle('active');
-  alert('menu button clicked');
 });
