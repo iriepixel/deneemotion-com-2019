@@ -26,6 +26,7 @@ PATHS:
     - "node_modules/motion-ui/src"
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
+    - "node_modules/jarallax/src/jarallax.js"
     - "src/assets/js/app.js"
   # Paths for the package task to include/exclude in .zip archive
   package:

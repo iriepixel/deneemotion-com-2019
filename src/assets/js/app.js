@@ -8,11 +8,11 @@ window.$ = $;
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-// import {
-//   jarallax,
-//   jarallaxElement,
-//   jarallaxVideo
-// } from './jarallax';
+import {
+  jarallax,
+  jarallaxElement,
+  jarallaxVideo
+} from 'jarallax';
 
 // import {
 //   jarallax,
@@ -25,11 +25,11 @@ window.$ = $;
 document.addEventListener("DOMContentLoaded", function () {
   // Handler when the DOM is fully loaded
   // $(document).foundation();
-  // jarallaxElement();
+  jarallaxElement();
 
-  // jarallax(document.querySelectorAll('.jarallax'), {
-  //   speed: 0.5
-  // });
+  jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.5
+  });
 
 });
 
