@@ -23,7 +23,9 @@ get_header();
           <div class="grid-x">
             <div class="cell">
               <h1 class="section__title"><?php the_title(); ?></h1>
-              <?php the_content(); ?>
+            </div>
+            <div class="cell large-6 large-offset-3">
+              <div class="contact__content"><?php the_content(); ?></div>
             </div>
           </div>
         </div>
