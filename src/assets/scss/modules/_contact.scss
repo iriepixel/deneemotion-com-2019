@@ -18,6 +18,9 @@
   p{
     font-size: rem-calc(18);
   }
+  a{
+    color: get-color(brand);
+  }
 }
 .contact__bg{
   height: 1000px;
