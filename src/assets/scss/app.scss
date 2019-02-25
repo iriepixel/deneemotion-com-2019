@@ -111,14 +111,16 @@
 }
 
 .section--video-content{
-  .kgvid_wrapper{
+  .kgvid_wrapper,
+  .fve-video-wrapper{
     z-index: 30;
+    margin-bottom: $global-margin * 4;
+    @include breakpoint(small down) {
+      margin-bottom: $global-margin * 2;
+    }
   }
   p{
-    margin: ($global-margin * 4) ($global-margin * 2) ($global-margin * 2);
+    margin: 0 ($global-margin * 2) ($global-margin * 2) $global-margin;
     opacity: .6;
-    @include breakpoint(small down) {
-      margin: ($global-margin * 2) 0;
-    }
   }
 }
