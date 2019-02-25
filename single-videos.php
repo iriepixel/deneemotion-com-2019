@@ -67,6 +67,10 @@ get_header();
   
               <?php wp_reset_query(); ?>
   
+              <div class="cell text-center padding-vertical-1">
+                <a class="button button--brand button--center" href="/index.php?page_id=40">More films</a>
+              </div>
+              
             </div>	
 
           <?php endif; ?>
