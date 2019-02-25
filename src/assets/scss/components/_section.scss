@@ -36,6 +36,9 @@ section {
         font-size: rem-calc(16);
       }
     }
+    a{
+      color: get-color(brand);
+    }
   }
   .section--video-grid{
     padding: ($global-padding * 2) 0 ($global-padding * 6) 0;
