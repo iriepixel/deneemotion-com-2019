@@ -51,6 +51,9 @@
       @include breakpoint(medium down) {
         padding: 0 !important;
       }
+      @include breakpoint(small only) {
+        font-size: rem-calc(16);
+      }
     }
     .about__button{
       @include breakpoint(medium down) {
