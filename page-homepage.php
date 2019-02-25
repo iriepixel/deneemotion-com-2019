@@ -74,7 +74,7 @@ get_header();
                   <div class="cell xlarge-12 xxlarge-8">
                     <div class="about__text"><?php the_field('about_us_text'); ?></div>
                     <div class="cell padding-top-1 about__button">
-                      <a class="button button--brand" href="/about">Read more</a>
+                      <a class="button button--brand" href="/index.php?page_id=42">Read more</a>
                     </div>
                   </div>
                 </div>
