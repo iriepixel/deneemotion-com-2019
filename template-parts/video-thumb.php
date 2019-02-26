@@ -1,7 +1,7 @@
 <div class="cell medium-6 large-4 thumb">
     <a class="thumb__link" href="<?php echo get_permalink(); ?>">
       <div class="thumb__image">
-        <?php the_post_thumbnail('large'); ?>
+        <?php the_post_thumbnail('medium'); ?>
       </div>
       <div class="thumb__text">
         <h3 class="thumb__title"><?php the_title(); ?></h3>
