@@ -50,7 +50,10 @@
     }
   
     .about__text{
-      font-size: rem-calc(18);
+      // font-size: rem-calc(18);
+      @include breakpoint(large down) {
+        font-size: rem-calc(16);
+      }
       @include breakpoint(medium down) {
         padding: 0 !important;
       }

@@ -15,21 +15,14 @@ import {
 
 import AOS from 'aos';
 
-// import {
-//   jarallax,
-//   jarallaxElement,
-//   jarallaxVideo
-// } from 'jarallax';
-
-// $(document).foundation();
-
 document.addEventListener("DOMContentLoaded", function () {
   // Handler when the DOM is fully loaded
   // $(document).foundation();
 
   AOS.init({
     offset: 150,
-    duration: 600
+    duration: 600,
+    once: true
   });
 
   jarallaxElement();

@@ -988,21 +988,14 @@ window.$ = _jquery2.default;
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-// import {
-//   jarallax,
-//   jarallaxElement,
-//   jarallaxVideo
-// } from 'jarallax';
-
-// $(document).foundation();
-
 document.addEventListener("DOMContentLoaded", function () {
   // Handler when the DOM is fully loaded
   // $(document).foundation();
 
   _aos2.default.init({
     offset: 150,
-    duration: 600
+    duration: 600,
+    once: true
   });
 
   (0, _jarallax.jarallaxElement)();

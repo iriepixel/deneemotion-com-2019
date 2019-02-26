@@ -16,11 +16,7 @@
 }
 .contact__content{
   p{
-    font-size: rem-calc(18);
     margin-bottom: $global-margin;
-    @include breakpoint(small only) {
-      font-size: rem-calc(16);
-    }
   }
   a{
     color: get-color(brand);

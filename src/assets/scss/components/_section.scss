@@ -27,14 +27,8 @@ section {
   }
   .section--team-text{
     padding: $global-padding * 3 0 0;
-    font-size: rem-calc(20);
     @include breakpoint(small down) {
       padding: $global-padding * 2 0 0;
-    }
-    p{
-      @include breakpoint(small down) {
-        font-size: rem-calc(16);
-      }
     }
     a{
       color: get-color(brand);
@@ -48,7 +42,6 @@ section {
   }
   .section--featured{
     padding-top: $global-padding * 6;
-    font-size: rem-calc(20);
     p{
       @include breakpoint(small down) {
         margin-bottom: 0;
@@ -57,11 +50,7 @@ section {
     @include breakpoint(xxlarge down) {
       padding-top: $global-padding * 3;
     }
-    @include breakpoint(large down) {
-      // padding-top: $global-padding * 2;
-    }
     @include breakpoint(small down) {
-      font-size: rem-calc(16);
       padding-top: $global-padding * 2;
     }
     .page-template-page-contact &{
