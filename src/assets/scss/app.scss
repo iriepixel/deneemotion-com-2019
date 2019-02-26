@@ -115,7 +115,7 @@
 .section--video-content{
   .kgvid_wrapper,
   .fve-video-wrapper{
-    z-index: 30;
+    z-index: 5;
     margin-bottom: $global-margin * 4;
     @include breakpoint(small down) {
       margin-bottom: $global-margin * 2;

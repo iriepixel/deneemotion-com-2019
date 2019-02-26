@@ -20,8 +20,8 @@
     top: 50%;
     transform: translate(0, -50%);
     right: rem-calc(20);
-    @include breakpoint(medium down) {
-      display: none;
+    @include breakpoint(small down) {
+      left: $global-padding / 1.6;
     }
     a{
       font-size: rem-calc(14);
@@ -31,6 +31,9 @@
       @include animation();
       &:hover{
         opacity: 1;
+      }
+      @include breakpoint(medium down) {
+        margin: 0 $global-margin / 4;
       }
     }
   }
