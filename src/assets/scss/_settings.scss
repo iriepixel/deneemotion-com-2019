@@ -85,7 +85,8 @@ $black: #2c2422;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Lato', sans-serif;
+// $body-font-family: 'Lato', sans-serif;
+$body-font-family: 'Montserrat', sans-serif;
 // font-family: 'Lato', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -170,7 +171,7 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
+$paragraph-lineheight: 1.8;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;

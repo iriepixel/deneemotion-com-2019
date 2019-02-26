@@ -2,14 +2,16 @@
   @include breakpoint(small only) {
       font-size: rem-calc(14);
     }
-  & .text-right{
-    @include breakpoint(small only) {
-      text-align: center;
+  & .footer__left{
+    text-align: left;
+    @include breakpoint(medium only) {
+      text-align: center !important;
     }
   }
-  & .text-left{
-    @include breakpoint(small only) {
-      text-align: center;
+  & .footer__right{
+    text-align: right;
+    @include breakpoint(medium only) {
+      text-align: center !important;
     }
   }
 }

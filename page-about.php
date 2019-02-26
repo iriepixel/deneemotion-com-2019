@@ -26,12 +26,12 @@ get_header();
         <!-- about -->
         <div class="about__container grid-container grid full">
           <div class="grid-x align-middle">
-            <div class="cell large-6">
+            <div class="cell large-12 xlarge-6">
               <div class="jarallax">
                 <img class="jarallax-img" src="<?php the_field('about_us_image'); ?>" alt="Deneemotion about">
               </div>
             </div>
-            <div class="cell large-6">
+            <div class="cell large-12 xlarge-6">
               <div class="grid-container grid">
                 <div class="grid-x grid-padding-x grid-margin-x about__right">
                   <div class="cell xlarge-12 xxlarge-8">
