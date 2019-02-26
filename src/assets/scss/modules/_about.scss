@@ -21,9 +21,12 @@
 }
   .about__right{
     padding: 0 $global-padding * 2;
-    @include breakpoint(medium down) {
-      padding: $global-padding * 2;
+    @include breakpoint(large down) {
+      padding: $global-padding * 3;
     }
+    // @include breakpoint(medium down) {
+    //   padding: $global-padding * 2;
+    // }
     @include breakpoint(small down) {
       padding: $global-padding * 2 0;
     }
