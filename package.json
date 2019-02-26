@@ -25,6 +25,7 @@
     "responsive"
   ],
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "foundation-sites": "6.5.1",
     "jarallax": "^1.10.7",
     "jquery": "~3.0.0",

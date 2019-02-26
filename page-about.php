@@ -18,11 +18,11 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-      <section class="section--featured text-center">
+      <section class="section--featured text-center" data-aos="fade-in">
         <h1 class="section__title"><?php the_title(); ?></h1>
       </section>
 
-      <section class="section--about about__section bg-color--gray">
+      <section class="section--about about__section bg-color--gray" data-aos="fade-in">
         <!-- about -->
         <div class="about__container grid-container grid full">
           <div class="grid-x align-middle">
@@ -45,7 +45,7 @@ get_header();
         <!-- about -->
       </section>
 
-      <section class="section--team">
+      <section class="section--team" data-aos="fade-in">
         <!-- team -->
         <div class="grid-container grid">
           <div class="grid-x grid-padding-x">
@@ -60,7 +60,7 @@ get_header();
         <!-- team -->
       </section>
       
-      <section class="section--team-text">
+      <section class="section--team-text" data-aos="fade-in">
         <!-- team text -->
         <div class="grid-container grid">
           <div class="grid-x grid-padding-x">
@@ -74,12 +74,12 @@ get_header();
         </div>
       </section>
       
-      <section class="section--instagram">
+      <section class="section--instagram" data-aos="fade-in">
         <!-- instagram -->
         <?php get_template_part( 'template-parts/instagram' ); ?>
       </section>
 
-      <section class="section--get-in-touch bg-color--gray">
+      <section class="section--get-in-touch bg-color--gray" data-aos="fade-in">
         <?php get_template_part( 'template-parts/get-in-touch' ); ?>
       </section>
 

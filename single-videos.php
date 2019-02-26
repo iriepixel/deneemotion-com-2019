@@ -15,7 +15,7 @@ get_header();
       
       <?php the_post_navigation(); ?>
 
-      <section class="section--featured text-center">
+      <section class="section--featured text-center" data-aos="fade-in">
         <div class="grid-container">
           <div class="grid-x">
             <div class="cell">
@@ -25,7 +25,7 @@ get_header();
         </div>
       </section>
       
-      <section class="section--video-content bg-color--gray">
+      <section class="section--video-content bg-color--gray" data-aos="fade-in">
         <div class="grid-container">
           <div class="grid-x">
             <div class="cell large-10 large-offset-1">
@@ -36,7 +36,7 @@ get_header();
       </section>
 
 
-      <section class="section--more-video">
+      <section class="section--more-video" data-aos="fade-in">
 
         <div class="grid-x grid-padding-x">
           <div class="cell">
@@ -78,7 +78,7 @@ get_header();
         <!-- random video grid -->
       </section>
 
-      <section class="section--get-in-touch bg-color--gray">
+      <section class="section--get-in-touch bg-color--gray" data-aos="fade-in">
         <?php get_template_part( 'template-parts/get-in-touch' ); ?>
       </section>
 

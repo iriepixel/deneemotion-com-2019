@@ -20,7 +20,7 @@ get_header();
 
     <?php echo do_shortcode("[rev_slider alias='homepage_video']");  ?>
 
-		<section class="section--home-grid">
+		<section class="section--home-grid" data-aos="fade-in">
         <!-- video grid -->
         <?php
           // WP_Query arguments
@@ -56,7 +56,7 @@ get_header();
         <!-- video grid -->
       </section>
 
-      <section class="section--about about__section bg-color--gray">
+      <section class="section--about about__section bg-color--gray" data-aos="fade-in">
         <!-- about -->
         <div class="about__container grid-container grid full">
           <div class="grid-x align-middle">
@@ -85,12 +85,12 @@ get_header();
         <!-- about -->
       </section>
       
-      <section class="section--instagram">
+      <section class="section--instagram" data-aos="fade-in">
         <!-- instagram -->
         <?php get_template_part( 'template-parts/instagram' ); ?>
       </section>
 
-      <section class="section--get-in-touch bg-color--gray">
+      <section class="section--get-in-touch bg-color--gray" data-aos="fade-in">
         <?php get_template_part( 'template-parts/get-in-touch' ); ?>
       </section>
 

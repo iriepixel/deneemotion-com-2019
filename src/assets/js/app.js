@@ -11,8 +11,9 @@ window.$ = $;
 import {
   jarallax,
   jarallaxElement,
-  jarallaxVideo
 } from 'jarallax';
+
+import AOS from 'aos';
 
 // import {
 //   jarallax,
@@ -25,6 +26,12 @@ import {
 document.addEventListener("DOMContentLoaded", function () {
   // Handler when the DOM is fully loaded
   // $(document).foundation();
+
+  AOS.init({
+    offset: 150,
+    duration: 600
+  });
+
   jarallaxElement();
 
   jarallax(document.querySelectorAll('.jarallax'), {

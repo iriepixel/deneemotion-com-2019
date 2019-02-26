@@ -18,7 +18,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-      <section class="section--featured text-center">
+      <section class="section--featured text-center" data-aos="fade-in">
         <div class="grid-container">
           <div class="grid-x">
             <div class="cell">
@@ -59,7 +59,7 @@ get_header();
         <!-- video grid -->
       </section>
 
-      <section class="section--get-in-touch bg-color--gray">
+      <section class="section--get-in-touch bg-color--gray" data-aos="fade-in">
         <?php get_template_part( 'template-parts/get-in-touch' ); ?>
       </section>
 

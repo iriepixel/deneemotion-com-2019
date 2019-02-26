@@ -1,4 +1,4 @@
-<div class="cell medium-6 large-4 thumb">
+<div class="cell medium-6 large-4 thumb" data-aos="fade-in">
     <a class="thumb__link" href="<?php echo get_permalink(); ?>">
       <div class="thumb__image">
         <?php the_post_thumbnail('medium'); ?>
