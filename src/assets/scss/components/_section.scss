@@ -15,7 +15,7 @@ section {
   .section--video-content{
     padding: ($global-padding * 3) ($global-padding * 2);
     @include breakpoint(small down) {
-      padding: $global-padding;
+      padding: $global-padding 0;
       p{
         font-size: rem-calc(14);
       }
