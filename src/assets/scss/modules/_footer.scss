@@ -1,4 +1,6 @@
 .footer__container{
+  font-family: $header-font-family;
+  text-transform: uppercase;
   @include breakpoint(small only) {
       font-size: rem-calc(14);
     }
