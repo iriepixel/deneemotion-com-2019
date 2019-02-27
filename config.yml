@@ -24,10 +24,10 @@ PATHS:
   sass:
     - "node_modules/foundation-sites/scss"
     - "node_modules/motion-ui/src"
-    - "node_modules/aos/src/sass"
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
-    - "node_modules/jarallax/src/jarallax.js"
+    - "node_modules/jarallax/dist/jarallax.js"
+    - "node_modules/aos/dist/aos.js"
     - "src/assets/js/app.js"
   # Paths for the package task to include/exclude in .zip archive
   package:

@@ -1,13 +1,12 @@
 @charset 'utf-8';
 
 @import url('https://fonts.googleapis.com/css?family=Amiri');
-// @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-@import 'aos';
+// @import 'aos';
 
 @include foundation-global-styles;
 //@include foundation-grid;
